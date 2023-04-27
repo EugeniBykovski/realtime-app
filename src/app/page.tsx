@@ -1,8 +1,5 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import Button from "@/components/ui/Button";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
-  return <div className="text-red-500">Hello</div>;
+export default async function Home() {
+  return <Button>Hello</Button>;
 }
