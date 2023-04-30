@@ -4,3 +4,22 @@ export interface User {
   image: string;
   id: string;
 }
+
+export interface Chat {
+  id: string;
+  messages: Message[];
+}
+
+export interface Message {
+  id: string;
+  senderId: string;
+  receiverId: string;
+  text: string;
+  timestamp: number;
+}
+
+export interface FriendRequest {
+  id: string;
+  senderId: string;
+  receiverId: string;
+}
